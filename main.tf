@@ -19,6 +19,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "demo" {
-  bucket = "terraformcloudops-siva-12345"
+resource "aws_s3_bucket" "demo1" {
+  bucket = "terraformcloudops-siva-123456"
 }
