@@ -1,25 +1,24 @@
-terraform 
-{
-    cloud 
-    {
-        organisation="Terraform_Sivaranjani"
+terraform {
+  cloud {
+    organization = "Terraform_Sivaranjani"
 
-        workspaces{
-            name=""
-        }
+    workspaces {
+      name = "terraformcloudops"
     }
+  }
 
- required_providers {
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
   }
 }
+
 provider "aws" {
   region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "demo" {
-  bucket = "my-vcs-demo-bucket-12345"
+  bucket = "terraformcloudops-siva-12345"
 }
